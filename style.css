@@ -42,15 +42,15 @@ h2 {
 }
 
 .first-section {
-    flex-grow: 1;
+    flex-grow: 2;
     flex-shrink: 1;
-    flex-basis: 130px;
+    flex-basis: 150px;
 }
 
 .second-section {
-    flex-grow: 1;
+    flex-grow: 2;
     flex-shrink: 1;
-    flex-basis: 130px;
+    flex-basis: 150px;
 }
 
 .input {
@@ -73,7 +73,7 @@ input:hover {
 button {
     flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: 80px;
+    flex-basis: 60px;
     height: 41px;
     border-radius: 2em;
     color: #fff;
