@@ -12,21 +12,26 @@ body {
     align-items: center; 
 }
 
-
 form {
     width: 70%;
+    padding: 2em;
+    background-color: #3a3a3a;
+    border-radius: 1em;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.container {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid black;
-    padding: 2em;
     gap: 1em;
-    background-color: #232D3F;
-    background-color: #3a3a3a;
     color: #fff;
     justify-content: center;
-    align-items: center;
-    border-radius: 1em;
-    
+    align-items: center;   
 }
 
 .item {
@@ -52,11 +57,12 @@ form {
     border: none;
     background-color: transparent;
     text-align: left;
-    padding: 10px;
+    padding-left: 1em;
+    height: 41px;
     color: #fff;
     font-size: 1em;
     box-shadow: 0 0 10px 2px rgb(34, 30, 30);
-    border-radius: 1em;
+    border-radius: 2em;
 }
 
 input:hover {
@@ -68,7 +74,7 @@ button {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 80px;
-    height: 3em;
+    height: 41px;
     border-radius: 2em;
     color: #fff;
     border: none;
@@ -89,17 +95,21 @@ button {
 
 #login:hover {
     box-shadow: 0 0 10px 2px #179b3c; 
+    font-weight: bold;
 }
 
 #signin:hover {
     box-shadow: 0 0 10px 2px rgb(90, 90, 241);
+    font-weight: bold;
 }
 
 
-@media (max-width: 480px) {
-    form > * {
+@media (max-width: 490px) {
+    .container > * {
         flex: 1 1 100%;
     }
+
+
 
 
     
