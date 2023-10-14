@@ -39,7 +39,7 @@ form {
 .first-section {
     flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: 200px;
+    flex-basis: 130px;
 }
 
 .second-section {
@@ -58,13 +58,13 @@ form {
     box-shadow: 0 0 10px 2px rgb(34, 30, 30);
     border-radius: 1em;
 }
+
 input:hover {
     text-align: center;
     box-shadow: 0 0 10px 2px #179b3c;
 }
 
 button {
-    background-color: #179b3c;
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 80px;
@@ -74,12 +74,28 @@ button {
     border: none;
     box-shadow: 0 0 10px 2px rgb(34, 30, 30);   
     align-self: flex-end;
+    font-size: 14px;
+    cursor: pointer;
 }
 
-button:hover {
-    box-shadow: 0 0 10px 2px #179b3c;
-    
+#login {
+    background-color: #179b3c;
 }
+#signin {
+    background-color: rgb(90, 90, 241);
+}
+
+
+
+#login:hover {
+    box-shadow: 0 0 10px 2px #179b3c; 
+}
+
+#signin:hover {
+    box-shadow: 0 0 10px 2px rgb(90, 90, 241);
+}
+
+
 @media (max-width: 480px) {
     form > * {
         flex: 1 1 100%;
