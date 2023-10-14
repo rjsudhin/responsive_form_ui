@@ -14,13 +14,14 @@ body {
 
 
 form {
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
     border: 1px solid black;
     padding: 2em;
     gap: 1em;
     background-color: #232D3F;
+    background-color: #3a3a3a;
     color: #fff;
     justify-content: center;
     align-items: center;
@@ -50,15 +51,20 @@ form {
 .input {
     border: none;
     background-color: transparent;
-    border-bottom: 2px solid #005B41;
     text-align: left;
     padding: 10px;
     color: #fff;
     font-size: 1em;
+    box-shadow: 0 0 10px 2px rgb(34, 30, 30);
+    border-radius: 1em;
+}
+input:hover {
+    text-align: center;
+    box-shadow: 0 0 10px 2px #179b3c;
 }
 
 button {
-    background-color: #3caa5b;
+    background-color: #179b3c;
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 80px;
@@ -66,9 +72,14 @@ button {
     border-radius: 2em;
     color: #fff;
     border: none;
-    
+    box-shadow: 0 0 10px 2px rgb(34, 30, 30);   
+    align-self: flex-end;
 }
 
+button:hover {
+    box-shadow: 0 0 10px 2px #179b3c;
+    
+}
 @media (max-width: 480px) {
     form > * {
         flex: 1 1 100%;
